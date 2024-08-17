@@ -14,6 +14,7 @@ html{
     margin: 0;
     padding: 0;
     font-size: 62.5%;
+    background-color: var(--stone-100);
 }
 *,*:before,*:after{
     box-sizing: inherit;
@@ -22,21 +23,19 @@ body{
     font-family: var(--outfit);
     font-size: 1.6rem;
     line-height: 2rem;
+    margin: 0;
 }
-/* Globales */
-/* .container{
-    max-width: 120rem;
-    width: 90%;
-    margin: 0 auto;
-} */
+
 a{
     text-decoration: none;
 }
 h1,h2{
     font-family: var(--young-serif);
+    margin: 0;
+    line-height: 100%;
 }
 h1{
-    font-size: 4rem;
+    font-size: 3.6rem;
     font-weight: normal;
 }
 h2{
@@ -44,10 +43,16 @@ h2{
     color: var(--brown-800);
     font-weight: normal;
 }
-
-img{
-    max-width: 100%;
+p{
+    color: var(--stone-600);
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 150%;
 }
+img{
+    width: 100%;
+}
+
 /* Utilities */
 .no-margin{
     margin: 0;
@@ -57,4 +62,40 @@ img{
 }
 .text-center{
     text-align: center;
+}
+.flex{
+    display: flex;
+    text-align: left;
+    justify-content: space-around;
+}
+.custom-ul{
+    list-style-type: disc;
+}
+.custom-ul li::marker {
+    color: var(--brown-800);
+}
+.custom-ol {
+    list-style-type: decimal; 
+}
+.custom-ol li::marker {
+    color: var(--brown-800); 
+}
+.recipe-container{
+    background-color: white;
+    border-radius: 2.4rem;
+    min-width: 375px;
+    max-width: 736px;
+
+}
+.recipe-content{
+    padding: 4rem 3.2rem;
+}
+.preparation-time-container{
+    background-color: var(--rose-50);
+    padding: 2.4rem;
+    margin-top: 32px;
+}
+.preparation-time-title{
+    font-weight: bolder;
+    color: #7A284E;
 }
