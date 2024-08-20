@@ -35,6 +35,9 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 - CSS Grid
 - Mobile-first workflow
 
+## Useful resources
+- Medium Post: [How to Customize Bullet and Number Colors in Lists with HTML and CSS](https://medium.com/p/2d533134356a)
+- My blog Post: [Cómo Personalizar los Colores de los Puntos y Números en Listas con HTML y CSS](https://blogponchoramos.netlify.app/blog/cambiarcolorlistas/)
 ## Author
 - Website - [ponchoramos.com](https://www.ponchoramos.com)
 - Frontend Mentor - [@alfonso-ramos](https://www.frontendmentor.io/profile/alfonso-ramos)
