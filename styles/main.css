@@ -1,101 +1,172 @@
 :root {
     --outfit: "Outfit", sans-serif;
-    --young-serif:"Young Serif", system-ui;
-    --rose-800:#7A284E;
-    --rose-50:#FFF7FB;
-    --stone-900:#312E2C;
-    --stone-600:#5F564D;
-    --stone-150:#E3DDD7;
-    --stone-100:#F3E5D7;
-    --brown-800:#854632;
+    --young-serif: "Young Serif", system-ui;
+    --rose-800: #7A284E;
+    --rose-50: #FFF7FB;
+    --stone-900: #312E2C;
+    --stone-600: #5F564D;
+    --stone-150: #E3DDD7;
+    --stone-100: #F3E5D7;
+    --brown-800: #854632;
 }
-html{
+
+html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-size: 62.5%;
     background-color: var(--stone-100);
 }
-*,*:before,*:after{
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
-body{
+
+body {
     font-family: var(--outfit);
     font-size: 1.6rem;
     line-height: 2rem;
     margin: 0;
 }
 
-a{
+a {
     text-decoration: none;
 }
-h1,h2{
+
+h1,
+h2 {
     font-family: var(--young-serif);
     margin: 0;
     line-height: 100%;
 }
-h1{
+
+h1 {
     font-size: 3.6rem;
     font-weight: normal;
 }
-h2{
+
+h2 {
     font-size: 2.8rem;
     color: var(--brown-800);
     font-weight: normal;
+    margin: 3rem 0 1.4rem 0;
 }
-p{
+
+p {
     color: var(--stone-600);
     margin: 0;
     font-size: 1.6rem;
     line-height: 150%;
 }
-img{
+
+img {
     width: 100%;
 }
 
+ul,
+ol {
+    padding: 1rem;
+}
+
+li {
+    margin: 1rem 0;
+}
+
 /* Utilities */
-.no-margin{
+.no-margin {
     margin: 0;
 }
-.no-padding{
+
+.no-padding {
     padding: 0;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
-.flex{
-    display: flex;
-    text-align: left;
-    justify-content: space-around;
+
+.grid {
+    display: grid;
+    text-align: start;
+    grid-template-columns: repeat(2, 1fr);
 }
-.custom-ul{
+
+.custom-ul {
     list-style-type: disc;
 }
+
+.custom-ul p {
+    margin-left: 1.6rem;
+}
+
 .custom-ul li::marker {
     color: var(--brown-800);
 }
+
 .custom-ol {
-    list-style-type: decimal; 
+    list-style-type: decimal;
 }
+
 .custom-ol li::marker {
-    color: var(--brown-800); 
+    color: var(--brown-800);
 }
-.recipe-container{
+
+.custom-ol p {
+    margin-left: 1.6rem;
+}
+
+.recipe-container {
     background-color: white;
     border-radius: 2.4rem;
     min-width: 375px;
     max-width: 736px;
-
 }
-.recipe-content{
+
+.recipe-introduction-text {
+    margin-top: 2.4rem;
+}
+
+.recipe-content {
     padding: 4rem 3.2rem;
 }
-.preparation-time-container{
+
+.preparation-time-container {
     background-color: var(--rose-50);
     padding: 2.4rem;
     margin-top: 32px;
 }
-.preparation-time-title{
+
+.preparation-time-title {
     font-weight: bolder;
     color: #7A284E;
+}
+
+.nutrition-table {
+    margin-top: 3rem;
+}
+
+.bold-brown {
+    font-weight: bold;
+    color: var(--brown-800);
+}
+
+@media (min-width: 768px) {
+    .recipe-container {
+        margin: 12.8rem auto;
+    }
+
+    .recipe-content {
+        padding: 4rem;
+    }
+
+    img {
+        border-radius: 2.4rem 2.4rem 0 0;
+    }
+
+    .nutrition-table {
+        margin: 3rem auto 0;
+        max-width: 90%;
+    }
 }
